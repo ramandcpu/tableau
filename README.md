@@ -1,8 +1,12 @@
-# tableau
+# Tableau
 
 
 
-Here are the step-by-step instructions to connect the sample MySQL database to Tableau and create the specified visualization:
+Here are the step-by-step instructions to connect the sample MySQL database to Tableau and create the specified visualization. If you haven't set up MySQL and populated it with the sample data yet, I have a dedicated section for that at 
+
+https://github.com/ramandcpu/SQL/tree/main/mysql
+
+Once you have the MySQL database ready, follow these instructions to connect it to Tableau and build the visualization:
 
 ## Connect MySQL Database to Tableau
 

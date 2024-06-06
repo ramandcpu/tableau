@@ -1,4 +1,6 @@
-Here are the steps to add your existing bar chart to a dashboard in Tableau:
+# How To Add A Chart To A Dashboard In Tableau
+
+#### Here are the steps to add your existing bar chart to a dashboard in Tableau:
 
 Open the worksheet containing your bar chart
 Click the Dashboard tab at the bottom of the workspace

@@ -1,5 +1,32 @@
 # Connect to CSV files In Tableau
 
+In this blog, we will explore how to export data from MySQL as CSV files and create interactive visualizations in Tableau. We will build a bar chart and a pie chart, combine them into a dashboard with a `dept name` filter, and enable interactivity to dynamically filter the bar chart using the pie chart.
+
+
+## Agenda
+
+### Data Preparation
+1. Exported CSV files from MySQL database.
+
+### Tableau Visualizations
+1. Created a bar chart with `emp no`, `dept name`, and filters.
+2. Created a pie chart with `emp no`, `gender`, colors, and angles.
+
+### Dashboard Creation
+1. Added a vertical container to the dashboard.
+2. Placed bar chart and pie chart side by side.
+3. Added `dept name` drop-down filter.
+4. Applied filter to both charts.
+
+### Interactivity
+1. Enabled "Use as Filter" for pie chart.
+2. Tested interactivity by filtering bar chart.
+
+### Saving and Exporting
+1. Saved Tableau workbook.
+
+##### Let's Get Started
+
 
 First of all we will extract `employees`, `departments`, and `dept_emp` tables as CSV files in MySQL Workbench. You can use the following tutorial if needed help;
 
@@ -69,14 +96,8 @@ SELECT * FROM dept_emp;
    - Click on the "Export" button located above the Result Grid.
    - In the "Export Data" dialog, select "CSV" as the format.
    - Choose a location to save the CSV file, name it `dept_emp.csv`, and click "Save".
-### Now that we have CSV files let's connect to them using Tableau
 
-### Summary
-
-- **Columns:** `emp no`
-- **Rows:** `dept name`
-- **Label:** `emp no`
-- **Filter:** `dept name`
+# Time to Connect to  CSV files and creating a Bar chart 
 
 
 1. **Open Tableau and Connect to Your Data:**
@@ -129,9 +150,7 @@ SELECT * FROM dept_emp;
     - Save your worksheet by clicking on "File" >  "Save" or "Save As" and choose a location to save your Tableau workbook.
 
 
-# Pie Chart now
-
-Certainly! Here are the revised instructions for creating a Pie Chart in Tableau, assuming you are already connected to your data and have joined the tables:
+# Creating a Pie Chart
 
 ### Summary
 
@@ -210,26 +229,53 @@ Step-by-step instructions to create a dashboard in Tableau, placing the bar char
 
 Remove any filters or color options from all the charts, so only the bar and pie charts are visible side by side. Drag a 'Vertical Container' from 'Objects' and place it above both charts.
 
+<img src="/part-3/pics/zz-5.png" width="500" />
+
 4. **Add 'dept name' as a Filter:**
 Now, click on the 'More Options' drop-down arrow on either chart, go to 'Filter', and select 'Dept Name'. If this does not automatically add the filter to the empty container we created, you can manually drag and drop it into the container. Then, change its options to 'Single Value (dropdown)'.
 
-5. **Apply the Filter to Both Sheets:**
+<img src="/part-3/pics/zz-4.png" width="500" />
+
+6. **Apply the Filter to Both Sheets:**
    - Click on the drop-down arrow on the `dept name` filter card again.
    - Select "Apply to Worksheets" > "Selected Worksheets".
    - In the dialog that appears, check both "Sheet 1" and "Sheet 2" to apply the filter to both charts.
    - Click OK.
 
-6. **Adjust the Layout and Appearance:**
+7. **Adjust the Layout and Appearance:**
    - Resize the charts and the filter card as needed to ensure a clean and organized layout.
    - You can adjust the size of the vertical container by clicking and dragging its borders.
 
-7. **Save Your Dashboard:**
+8. **Save Your Dashboard:**
    - Save your dashboard by clicking on "File" > "Save" or  "Save As" and choose a location to save your Tableau workbook.
 
 
-
+# Interactive Charts
 
 To make the pie chart interactive on this dashboard, you can use the "Filter" action in Tableau. Here are the step-by-step instructions:
+
+#### Method: 1
+
+Step-by-Step Instructions
+
+1. **Select the Pie Chart:**
+   - Click on the pie chart ("Sheet 2") to select it.
+
+2. **Enable "Use as Filter":**
+   - In the top-right corner of the pie chart, click on the drop-down arrow (more options).
+   - Select "Use as Filter" from the drop-down menu.
+
+<img src="/part-3/pics/zz-6.png" width="500" />
+
+<img src="/part-3/pics/zz-7.png" width="500" />
+
+3. **Test the Interactivity:**
+   - In the dashboard workspace, click on a specific slice of the pie chart.
+   - The bar chart should now filter and display data only for the selected slice (department).
+
+
+
+#### Method: 2
 
 1. **Select the Pie Chart:**
    - In the dashboard workspace, click on the pie chart ("Sheet 2") to select it.
@@ -254,7 +300,9 @@ Leave everthing else default.
    - In the dashboard workspace, hover over a slice of the pie chart.
    - Click on a specific department slice.
    - The bar chart should now filter and display data only for the selected department.
+<img src="/part-3/pics/zz-7.png" width="500" />
 
+<img src="/part-3/pics/zz-8.png" width="500" />
 
 10. **Save Your Dashboard:**
     - Save your dashboard by clicking on "File" > "Save" or "Save As" and choose a location to save your Tableau workbook.
@@ -266,7 +314,7 @@ Leave everthing else default.
 .
 .
 
-<img src="/part-3/pics/rev-1.png" width="500" />
+
 
 .
 .

@@ -192,10 +192,72 @@ Step-by-Step Instructions
 
 
 
+# Creating A Dashboard
+
+Step-by-step instructions to create a dashboard in Tableau, placing the bar chart and pie chart side by side (vertically) using a vertical container, and adding 'dept name' as a filter with a drop-down list:
+
+
+1. **Create a New Dashboard:**
+   - Click on the "New Dashboard" button at the bottom of Tableau.
+
+2. **Set Up the Dashboard Layout:**
+   - In the Dashboard pane on the left, ensure that "Show Dashboard Title" is checked if you want to display a title.
+   - Drag a "Vertical" layout container from the Objects section to the dashboard workspace.
+
+3. **Add Sheets to the Vertical Container:**
+   - Drag "Sheet 1" (the bar chart) from the Sheets section to the vertical container.
+   - Drag "Sheet 2" (the pie chart) from the Sheets section to the vertical container, placing it below "Sheet 1".
+
+Remove any filters or color options from all the charts, so only the bar and pie charts are visible side by side. Drag a 'Vertical Container' from 'Objects' and place it above both charts.
+
+4. **Add 'dept name' as a Filter:**
+Now, click on the 'More Options' drop-down arrow on either chart, go to 'Filter', and select 'Dept Name'. If this does not automatically add the filter to the empty container we created, you can manually drag and drop it into the container. Then, change its options to 'Single Value (dropdown)'.
+
+5. **Apply the Filter to Both Sheets:**
+   - Click on the drop-down arrow on the `dept name` filter card again.
+   - Select "Apply to Worksheets" > "Selected Worksheets".
+   - In the dialog that appears, check both "Sheet 1" and "Sheet 2" to apply the filter to both charts.
+   - Click OK.
+
+6. **Adjust the Layout and Appearance:**
+   - Resize the charts and the filter card as needed to ensure a clean and organized layout.
+   - You can adjust the size of the vertical container by clicking and dragging its borders.
+
+7. **Save Your Dashboard:**
+   - Save your dashboard by clicking on "File" > "Save" or  "Save As" and choose a location to save your Tableau workbook.
 
 
 
 
+To make the pie chart interactive on this dashboard, you can use the "Filter" action in Tableau. Here are the step-by-step instructions:
+
+1. **Select the Pie Chart:**
+   - In the dashboard workspace, click on the pie chart ("Sheet 2") to select it.
+
+2. **Open the Actions Menu:**
+   - In the top menu, go to "Worksheet" > "Actions".
+
+3. **Create a New Filter Action:**
+   - In the Actions dialog box, click on the "Add Action" button.
+   - From the list of actions, select "Filter".
+
+4. **Configure the Filter Action:**
+   - In the "Source Sheets" section, ensure that "Sheet 2" (the pie chart) is selected.
+   - In the "Target Sheets" section, check the box for "Sheet 1" (the bar chart).
+   - In the "Clearing the selection" check "show all values"
+Leave everthing else default.
+
+7. **Save the Action:**
+   - Click "OK" to save the filter action.
+
+8. **Test the Interactivity:**
+   - In the dashboard workspace, hover over a slice of the pie chart.
+   - Click on a specific department slice.
+   - The bar chart should now filter and display data only for the selected department.
+
+
+10. **Save Your Dashboard:**
+    - Save your dashboard by clicking on "File" > "Save" or "Save As" and choose a location to save your Tableau workbook.
 
 
 

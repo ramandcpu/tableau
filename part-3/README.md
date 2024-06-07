@@ -129,6 +129,65 @@ SELECT * FROM dept_emp;
     - Save your worksheet by clicking on "File" >  "Save" or "Save As" and choose a location to save your Tableau workbook.
 
 
+# Pie Chart now
+
+Certainly! Here are the revised instructions for creating a Pie Chart in Tableau, assuming you are already connected to your data and have joined the tables:
+
+### Summary
+
+- **Columns:** `emp no`
+- **Rows:** `gender`
+- **Marks Card:**
+  - **Type:** Pie
+  - **Color:** `gender`
+  - **Angle:** `emp no`
+  - **Label:** Customize as needed
+
+Step-by-Step Instructions
+
+1. **Create a New Worksheet:**
+   - Click on the "New Woksheet" button right next to your current worksheet tab at the bottom to create a new worksheet.
+
+2. **Add 'emp no' to Columns:**
+   - In the Data pane, find the `emp no` field (from the `employees` table).
+   - Drag `emp no` to the Columns shelf.
+
+3. **Add 'gender' to Rows:**
+   - In the Data pane, find the `gender` field (from the `employees` table).
+   - Drag `gender` to the Rows shelf.
+
+4. **Convert to Pie Chart:**
+   - In the Marks card, click on the drop-down menu and select "Pie". Your chart will initially resemble the one in the following picture, but we will refine it shortly.
+
+<img src="/part-3/pics/rev-3.png" width="500" />
+
+
+5. **Add 'gender' to Color & Label:**
+   - In the Data pane, find the `gender` field again.
+   - Drag `gender` to the Color shelf in the Marks card.
+   - Drag `gender` to the Label shelf in the Marks card.
+
+6. **Convert it to Pie Chart:**
+   - Click on `Show Me` and pick Pie Chart.
+   - This will automatically configure your settings, resulting in a well-presented pie chart.
+
+<img src="/part-3/pics/rev-4.png" width="500" />  
+
+
+7. **Adjust the Pie Chart:**
+   - Click on the Size shelf in the Marks card to adjust the size of the pie chart.
+   - You can also adjust the colors by clicking on the Color shelf and selecting the desired colors for each gender.
+
+8. **Customize Labels:**
+   - Click on the Label shelf in the Marks card.
+   - Ensure that "Show mark labels" is checked.
+   - You can customize the font, size, and alignment of the labels as needed.
+
+9. **Save Your Worksheet:**
+   - Save your worksheet by clicking on "File" >  "Save" or "Save As" and choose a location to save your Tableau workbook.
+
+
+
 
 
 

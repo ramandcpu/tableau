@@ -1,4 +1,4 @@
-# How To Add A Chart To A Dashboard In Tableau
+# Connect to CSV files In Tableau
 
 
 First of all we will extract `employees`, `departments`, and `dept_emp` tables as CSV files in MySQL Workbench. You can use the following tutorial if needed help;
@@ -136,12 +136,15 @@ Certainly! Here are the revised instructions for creating a Pie Chart in Tableau
 ### Summary
 
 - **Columns:** `emp no`
+- **Filters:** `Dept Name`
 - **Rows:** `gender`
 - **Marks Card:**
   - **Type:** Pie
   - **Color:** `gender`
   - **Angle:** `emp no`
-  - **Label:** Customize as needed
+  - **Label:** `gender`
+  - **Label:** `emp no`
+  - **Size:** `emp no`
 
 Step-by-Step Instructions
 

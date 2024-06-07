@@ -1,4 +1,4 @@
-# Connect to CSV files In Tableau
+# Connect to CSV files In Tableau [Public Version]
 
 In this blog, we will explore how to export data from MySQL as CSV files and create interactive visualizations in Tableau. We will build a bar chart and a pie chart, combine them into a dashboard with a `dept name` filter, and enable interactivity to dynamically filter the bar chart using the pie chart.
 
